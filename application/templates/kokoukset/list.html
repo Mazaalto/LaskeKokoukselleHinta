@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Kokous</th>
+      <th>Pidetty</th>
+      <th></th>
+    </tr>
+    {% for kokous in kokoukset %}
+    <tr>
+      <td>{{ kokous.name }}</td>
+      <td>{{ kokous.done }}</td>
+      <td>
+	<form method="POST" action="{{ url_for('kokoukset_set_done', kokous_id=kokous.id) }}">
+	  <input type="submit" value="Change status!"/>
+	</form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
