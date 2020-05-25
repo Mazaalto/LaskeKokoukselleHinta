@@ -139,3 +139,4 @@ cython_debug
 kokoukset.db
 tasks.db
 venv
+tasks.db

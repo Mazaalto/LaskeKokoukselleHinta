@@ -1,10 +1,6 @@
 from application import app, db
-from flask import redirect, render_template, request, url_for
+from flask import render_template, request
 from application.tasks.models import Task
-
-@app.route("/kokoukset", methods=["GET"])
-def tasks_index():
-    return render_template("tasks/list.html", tasks = Task.query.all())
 
 @app.route("/kokoukset/new/")
 def tasks_form():
@@ -17,4 +13,4 @@ def tasks_create():
     db.session().add(t)
     db.session().commit()
   
-    return redirect(url_for("tasks_index"))
+    return "hello world!"
