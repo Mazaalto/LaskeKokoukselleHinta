@@ -14,3 +14,8 @@ Kokousraportissa verrataan kustannusta lähimpään kustannustaulukon (auto, pol
 
 Kuva tietokantahahmotelmasta löytyy 
 Documentation/Images/IMG_0075.jpg
+
+#herokusijainti
+https://kokouksenhinta.herokuapp.com/
+
+
