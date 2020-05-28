@@ -16,6 +16,6 @@ Kuva tietokantahahmotelmasta löytyy
 Documentation/Images/IMG_0075.jpg
 
 #herokusijainti
-https://kokouksenhinta.herokuapp.com/
+https://laske-kokoukselle-hinta.herokuapp.com/
 
 
