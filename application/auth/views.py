@@ -7,6 +7,11 @@ from application.auth.forms import LoginForm
 
 #kirjautumislomakkeen tekoa
 
+#uuden käyttäjän luominen
+@app.route("/auth/new/")
+def auth_form():
+    return render_template("auth/new.html")
+
 @app.route("/auth/login", methods = ["GET", "POST"])
 def auth_login():
     if request.method == "GET":

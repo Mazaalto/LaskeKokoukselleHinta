@@ -5,7 +5,20 @@
     Tervetuloa Kokouksen hinta verkkosivulle. Aloita kirjautumalla sivulle vasemmasta yläkulmasta.
     Tiedätkö miten paljon turhat kokoukset maksavat aikaa ja rahaa osallistujille?
     Voit selvittää sen helposti ja nopeasti syöttämällä kokoukseen osallistujat ja luomalla kokouksen. Verkkosivu laskee sinulle kokouksen hinnan.
-
-	
   </p>
+{% if needs_tasks is defined %}
+<p>
+  Seuraavat työntekijät on rekisteröity, mutta eivät ole missäkään kokouksissa:
+</p>
+
+<ul>
+  {% for user in needs_tasks %}
+  <li>
+    {{user.id}} {{user.name}}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+
 {% endblock %}
