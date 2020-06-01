@@ -18,4 +18,5 @@ Documentation/Images/IMG_0075.jpg
 #herokusijainti
 https://laske-kokoukselle-hinta.herokuapp.com/
 
+#testitunnukset: käyttäjänimi: hello salasana: world
 
